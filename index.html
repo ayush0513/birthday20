@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="music-player">
+        <iframe style="border-radius:12px"
+          src="https://open.spotify.com/embed/playlist/6Q6aybZTJWaZomja0ZhXIP?utm_source=generator&theme=0"
+          width="100%" height="80" frameborder="0" allowtransparency="true" 
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy">
+        </iframe>
+      </div>
+      
+    <div class="container" id="page1">
+        <h1 class="fade-in">Happy Birthday, My Love 🎂💘</h1>
+        <p class="fade-in">Let’s relive a few little moments together 💫</p>
+      
+        <div class="slideshow">
+          <video class="slide active" autoplay muted loop playsinline>
+            <source src="7.mp4" type="video/mp4" />
+          </video>
+          <video class="slide" autoplay muted loop playsinline>
+            <source src="8.mp4" type="video/mp4" />
+          </video>
+          <video class="slide" autoplay muted loop playsinline>
+            <source src="9.mp4" type="video/mp4" />
+          </video>
+          <!-- Add more <video> blocks if needed -->
+        </div>
+      
+        <button onclick="nextPage()">Click to continue ✨</button>
+      </div>
+      
+
+  <div class="container hidden" id="page2">
+    <h2>Our Memories 📸</h2>
+    <p>Here's a little trip down memory lane...</p>
+  
+    <div class="slideshow">
+      <img src="1.jpg" class="slide active" />
+      <img src="2.jpg" class="slide" />
+      <img src="3.jpg" class="slide" />
+      <img src="4.jpg" class="slide" />
+      <img src="5.jpg" class="slide" />
+      <img src="sudu.jpg" class="slide" />
+      <img src="bubba.jpg" class="slide" />
+      <!-- Add more <img> tags for more photos -->
+    </div>
+  
+    <button onclick="nextPage()">Next</button>
+  </div>
+  
+
+  <!-- Page 3: Love Notes -->
+  <div class="container hidden" id="page3">
+    <h2>Love Notes 💌</h2>
+    <p id="loveMessage" class="typewriter"></p>
+    <button onclick="nextPage()">Next</button>
+  </div>
+  
+  
+  <!-- Page 4: Spotify Playlist -->
+  <div class="container hidden" id="page4">
+    <h2>Our Playlist 🎶</h2>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6Q6aybZTJWaZomja0ZhXIP?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <button onclick="nextPage()">Next</button>
+  </div>
+  
+  <!-- Page 5: Final Message -->
+  <div class="container hidden" id="page5">
+    <h2>One Last Thing... 🎈</h2>
+    <p>Thank you for being you. I love you so much. 💖</p>
+    <!-- Add floating hearts or final video -->
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

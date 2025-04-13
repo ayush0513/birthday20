@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding-top: 80px; /* space for the music player */
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffafc;
+  color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+  
+  .container {
+    text-align: center;
+    padding: 2rem;
+    width:100%;
+    box-sizing: border-box;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  button {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #ffb6c1;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff8fa3;
+  }
+  
+  .fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+    
+      
+  
+   
+      
+  }.music-player {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 999;
+    background-color: #fffafc;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  body {
+    padding-top: 80px; /* prevent content from hiding under the player */
+  }
+  
+  .slideshow {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    aspect-ratio: 3 / 4;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #fffafc;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* <-- this is the key for FULL FIT */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border-radius: 20px;
+    background-color: #fffafc;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  
+  .typewriter {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    color: #ff6b81;
+    white-space: pre-wrap;
+    border-right: 2px solid #ff6b81;
+    animation: blink-caret 0.7s step-end infinite;
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #ff6b81;
+    }
+  }
+  .typewriter {
+    text-shadow: 0 0 3px #ffc0cb, 0 0 6px #ff6b81;
+  }
+  
