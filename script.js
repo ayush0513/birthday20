@@ -33,7 +33,7 @@ function showNextImageSlide() {
 }
 
 // 💌 Typewriter effect for love note
-const loveMessage = "I just want you to know how incredibly grateful I am for you. You've filled my life with love, laughter, and the sweetest memories. Every little moment with you is a treasure. I love you more than words can say. 💖";
+const loveMessage = "I just want you to know how incredibly grateful I am for you.You are a great human being. I love the way you vibe . You've filled my life with love, laughter, and the sweetest memories. Every little moment with you is a treasure. I love you more than words can say. 💖 . Once again happy birthday to you bubba i love you the most💋";
 
 let i = 0;
 function typeLoveNote() {
